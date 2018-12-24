@@ -79,10 +79,10 @@ public class Sending extends T_or_F_bot {
     }
     public void sendButtons(Update update){
         SendMessage message = InlineKeyboardBuilder.create(update.getMessage().getChat().getId())
-                .setText("Правда чи брихня ???")
+                .setText("Правда чи брехня ???")
                 .row()
                 .button("Правда", "set_true")
-                .button("Брихня", "set_false")
+                .button("Брехня", "set_false")
                 .endRow()
                 .build();
         try {
@@ -105,10 +105,10 @@ public class Sending extends T_or_F_bot {
         }
         Long id = Long.parseLong(Functions.getInstance().getId(update));
         SendMessage message = InlineKeyboardBuilder.create(id)
-                .setText(test.test + "\nПравда чи брихня ???")
+                .setText(test.test + "\nПравда чи брехня ???")
                 .row()
                 .button("Правда", answer_one)
-                .button("Брихня", answer_two)
+                .button("Брехня", answer_two)
                 .endRow()
                 .build();
         try {
